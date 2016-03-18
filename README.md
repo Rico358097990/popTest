@@ -26,7 +26,7 @@ pop最核心的代码：
 
       self.animated = !self.animated;
 
-      //动画完成后继续调用此方法
+      //动画完成后继续调用此方法（这儿要根据自己的需求做改动）
 
       anim.completionBlock = ^(POPAnimation *anim, BOOL finished) {
       if (finished) {
@@ -38,4 +38,4 @@ pop最核心的代码：
       //必要的代码，key是描述这个动画的
 
       [self.popCircle.layer pop_addAnimation:anim forKey:@"Animation"];
-  }
+    }
